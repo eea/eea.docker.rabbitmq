@@ -15,8 +15,6 @@ Docker orchestration for EEA main portal [**RabbitMQ**](http://www.rabbitmq.com/
     $ docker-compose up -d
     $ docker-compose logs
 
-## Supported environment variables ##
-
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).
