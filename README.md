@@ -22,12 +22,16 @@ During the first time deployement, create and edit the secret environment file
 
     $ cp .secret.example .secret
     $ vim .secret
-    $ # edit user and password for rabbitmq daemon and management interface
+    $ # edit user and password for rabbitmq daemon and management plugin
 
-Start containers
+Start container
 
     $ docker-compose up -d
     $ docker-compose logs
+
+## Example usage
+
+- [Tutorials](https://www.rabbitmq.com/getstarted.html) using the pika 0.10.0 Python client
 
 ## Copyright and license
 
