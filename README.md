@@ -2,16 +2,30 @@
 
 Docker orchestration for EEA main portal [**RabbitMQ**](http://www.rabbitmq.com/) service
 
+## Base docker image
+
+ - [hub.docker.com](https://hub.docker.com/_/rabbitmq/)
+
+## Prerequisites
+
+- Install [Docker](https://docs.docker.com/installation/)
+- Install [Compose](https://docs.docker.com/compose/install/)
+
 ## Installation
 
-1. Install [Docker](https://www.docker.com/).
-
-2. Install [Docker Compose](https://docs.docker.com/compose/).
-
-## Usage
+Clone the repository
 
     $ git clone https://github.com/eea/eea.docker.rabbitmq.git
     $ cd eea.docker.rabbitmq
+
+During the first time deployement, create and edit the secret environment file
+
+    $ cp .secret.example .secret
+    $ vim .secret
+    $ # edit user and password for rabbitmq daemon and management interface
+
+Start containers
+
     $ docker-compose up -d
     $ docker-compose logs
 
