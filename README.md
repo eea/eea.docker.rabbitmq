@@ -32,6 +32,7 @@ Start container
 ## Example usage
 
 - [Tutorials](https://www.rabbitmq.com/getstarted.html) using the pika 0.10.0 Python client
+- [Management plugin] (https://www.rabbitmq.com/management.html) that provides an HTTP-based API for management and monitoring of your RabbitMQ server
 
 ## Copyright and license
 
