@@ -1,6 +1,6 @@
-# RabbitMQ Docker orchestration for EEA main portal
+# RabbitMQ Docker orchestration for EEA
 
-Docker orchestration for EEA main portal [**RabbitMQ**](http://www.rabbitmq.com/) service
+Docker orchestration for EEA [**RabbitMQ**](http://www.rabbitmq.com/) service
 
 ## Base docker image
 
