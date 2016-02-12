@@ -6,3 +6,6 @@ rabbitmq:
   - 15672:15672 # port for the Management interface
   env_file:
     - .secret
+  volumes:
+  - /etc/localtime:/etc/localtime:ro
+
