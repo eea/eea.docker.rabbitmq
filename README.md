@@ -37,15 +37,15 @@ Start container
 
     $ python rabbitmqadmin.py -H HOST -P PORT -u USERNAME -p PASSWORD -f pretty_json list queues vhost name node durable messages
     $ # returns a JSON structure like this
-    $ [
-    $   {
-    $     "durable": true,
-    $     "messages": 2,
-    $     "name": "odp_queue",
-    $     "node": "rabbit@2e7a21533b6b",
-    $     "vhost": "/"
-    $   }
-    $ ]
+    $ # [
+    $ #   {
+    $ #     "durable": true,
+    $ #     "messages": 2,
+    $ #     "name": "odp_queue",
+    $ #     "node": "rabbit@2e7a21533b6b",
+    $ #     "vhost": "/"
+    $ #   }
+    $ # ]
 
 ## Copyright and license
 
