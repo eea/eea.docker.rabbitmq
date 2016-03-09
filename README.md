@@ -53,6 +53,10 @@ If the service is down
 
     $ # *** Could not connect: [Errno 111] Connection refused
 
+If the credentials are invalid
+
+    $ # *** Access refused: /api/queues?columns=vhost,name,node,durable,messages
+
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).
