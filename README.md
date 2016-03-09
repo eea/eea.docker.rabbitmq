@@ -33,6 +33,19 @@ Start container
 
 - [Tutorials](https://www.rabbitmq.com/getstarted.html) using the pika 0.10.0 Python client
 - [Management plugin] (https://www.rabbitmq.com/management.html) that provides an HTTP-based API for management and monitoring of your RabbitMQ server
+- [Management Command Line Tool] (http://www.rabbitmq.com/management-cli.html) that provides a command line tool rabbitmqadmin (python script) which can perform the same actions as the web-based UI
+
+    $ python rabbitmqadmin.py -H HOST -P PORT -u USERNAME -p PASSWORD -f pretty_json list queues vhost name node durable messages
+    $ # returns a JSON structure like this
+    $ [
+    $   {
+    $     "durable": true,
+    $     "messages": 2,
+    $     "name": "odp_queue",
+    $     "node": "rabbit@2e7a21533b6b",
+    $     "vhost": "/"
+    $   }
+    $ ]
 
 ## Copyright and license
 
