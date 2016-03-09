@@ -49,6 +49,10 @@ Using rabbitmqadmin.py
     $ #   }
     $ # ]
 
+If the service is down
+
+    $ # *** Could not connect: [Errno 111] Connection refused
+
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).
