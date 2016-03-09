@@ -35,6 +35,8 @@ Start container
 - [Management plugin] (https://www.rabbitmq.com/management.html) that provides an HTTP-based API for management and monitoring of your RabbitMQ server
 - [Management Command Line Tool] (http://www.rabbitmq.com/management-cli.html) that provides a command line tool rabbitmqadmin (python script) which can perform the same actions as the web-based UI
 
+Using rabbitmqadmin.py
+
     $ python rabbitmqadmin.py -H HOST -P PORT -u USERNAME -p PASSWORD -f pretty_json list queues vhost name node durable messages
     $ # returns a JSON structure like this
     $ # [
