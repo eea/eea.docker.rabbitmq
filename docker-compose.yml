@@ -1,5 +1,6 @@
 rabbitmq:
   image: rabbitmq:3-management
+  hostname: eea-rabbit
   restart: always
   ports:
   - 5672:5672 # port for the daemon API, can be exposed to public.
