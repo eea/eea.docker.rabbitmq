@@ -57,6 +57,35 @@ If the credentials are invalid
 
     $ # *** Access refused: /api/queues?columns=vhost,name,node,durable,messages
 
+### Data migration
+
+You can access production data inside `rabbitmq_data` container at:
+
+    /var/lib/rabbitmq
+
+Thus:
+
+1. Start **rsync client** on host where do you want to migrate data (DESTINATION HOST):
+
+  ```
+    $ docker run -it --rm --name=r-client --volumes-from=eeadockerrabbitmq_rabbitmq_data_1 eeacms/rsync sh
+  ```
+
+2. Start **rsync server** on host from where do you want to migrate data (SOURCE HOST):
+
+  ```
+    $ docker run -it --rm --name=r-server -p 2222:22 --volumes-from=eeadockerrabbitmq_rabbitmq_data_1 \
+                 -e SSH_AUTH_KEY="<SSH-KEY-FROM-R-CLIENT-ABOVE>" \
+             eeacms/rsync server
+  ```
+
+3. Within **rsync client** container from step 1 run:
+
+  ```
+    $ rsync -e 'ssh -p 2222' -avz root@<SOURCE HOST IP>:/var/lib/rabbitmq/ /var/lib/rabbitmq/
+  ```
+
+
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).
