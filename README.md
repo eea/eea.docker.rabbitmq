@@ -1,3 +1,7 @@
+# OBSOLETE - orchestration moved to EEA Rancher catalog
+
+ - [see "EEA - RabbitMQ" Rancher catalog template](https://github.com/eea/eea.rancher.catalog/tree/master/templates/rabbitmq)
+
 # RabbitMQ Docker orchestration for EEA
 
 Docker orchestration for EEA [**RabbitMQ**](http://www.rabbitmq.com/) service
