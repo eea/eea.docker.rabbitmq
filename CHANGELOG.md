@@ -1,10 +1,10 @@
 # Changelog
 
-## 2016-02-12
+## 3.7.15-1 (2019-05-24)
 
-- Added data container pattern in docker-compose
-- Use same timezone as host
+- Initial public release
 
-## 2016-02-10
-
-- Rabbitmq 3.6.0
+  - RabbitMQ: 3.7.15-management
+  - Plugins:
+    - rabbitmq_shovel
+    - rabbitmq_shovel_management
