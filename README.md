@@ -10,8 +10,10 @@ RabbitMQ with `shovel` plugin enabled.
 
 ### Stable and immutable tags
 
-  - `:3.7.15-1` [*Dockerfile*](https://github.com/eea/eea.docker.rabbitmq/tree/3.7.15-1/Dockerfile)
-  - `:3.7.28-1` [*Dockerfile*](https://github.com/eea/eea.docker.rabbitmq/tree/3.7.28-1/Dockerfile)
+  - `:3.13.2-1` [*Dockerfile*](https://github.com/eea/eea.docker.rabbitmq/tree/3.13.2-1/Dockerfile) [ Alpine 3.19 ]
+  - `:3.7.28-1` [*Dockerfile*](https://github.com/eea/eea.docker.rabbitmq/tree/3.7.28-1/Dockerfile) [ Ubuntu ]
+  - `:3.7.15-1` [*Dockerfile*](https://github.com/eea/eea.docker.rabbitmq/tree/3.7.15-1/Dockerfile) [ Ubuntu ]
+
 
 See [older versions](https://github.com/eea/eea.docker.rabbitmq/releases)
 
